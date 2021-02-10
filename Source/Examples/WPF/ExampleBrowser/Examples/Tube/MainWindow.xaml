@@ -4,11 +4,13 @@
     xmlns:ht="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
      Title="TubeDemo" Height="480" Width="640">
     <Grid>
-        <ht:HelixViewport3D ZoomExtentsWhenLoaded="True">
+        <ht:HelixViewport3D x:Name="hvp3D" ZoomExtentsWhenLoaded="True">
             <ht:SunLight/>
+            <!--
             <ht:TubeVisual3D Path="{Binding Ring1}" Diameter="{Binding Value, ElementName=diameterSlider}" ThetaDiv="{Binding Value, ElementName=thetaDivSlider}" IsPathClosed="True" Fill="Red"/>
             <ht:TubeVisual3D Path="{Binding Ring2}" Diameter="{Binding Value, ElementName=diameterSlider}" ThetaDiv="{Binding Value, ElementName=thetaDivSlider}" IsPathClosed="True" Fill="Green" />
             <ht:TubeVisual3D Path="{Binding Ring3}" Diameter="{Binding Value, ElementName=diameterSlider}" ThetaDiv="{Binding Value, ElementName=thetaDivSlider}" IsPathClosed="True" Fill="Blue"/>
+            -->
         </ht:HelixViewport3D>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Opacity="0.5" >
             <Slider x:Name="diameterSlider" Value="0.4" Minimum="0.1" Maximum="1" Width="150" Margin="10"/>
